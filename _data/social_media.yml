@@ -1,0 +1,18 @@
+social_media_title: Social's
+socials:
+- title: Github
+  username: adamfriswell
+  href: https://github.com/
+  fa-icon: fa-github-square
+- title: LinkedIn
+  username: adam-friswell
+  href: https://www.linkedin.com/in/
+  fa-icon: fa-linkedin-square
+- title: Instagram
+  username: adam_friswell
+  href: https://www.instagram.com/
+  fa-icon: fa-instagram
+- title: Twitter
+  username: adamfriswell
+  href: https://twitter.com/
+  fa-icon: fa-twitter-square

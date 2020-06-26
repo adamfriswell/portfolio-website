@@ -1,0 +1,10 @@
+site_list_title: Site Map
+pages:
+- title: Home
+  url: index.html
+- title: About
+  url: about.html
+- title: Projects
+  url: projects.html
+- title: Contact
+  url: contact.html

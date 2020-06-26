@@ -1,0 +1,10 @@
+<header class="site-header">
+    <div class="wrapper">
+        <a class="site-title link" href="/index.html"> {{ site.title }} </a>
+        <nav>
+            {% for item in site.data.site_list.pages reversed%}
+            <a class="page-link link" href="{{item.url}}"> {{ item.title }} </a>
+            {% endfor %}
+        </nav>
+    </div>
+</header>
