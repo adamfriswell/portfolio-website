@@ -5,13 +5,12 @@
                 <p>
                     <strong>Site Map:</strong>
                     {% for item in site.data.site_list.pages %}
-                        <p class="link" href="/{{item.url}}"> {{ item.title }}</a></p>
+                        <a class="link" href="{{item.url}}"> {{ item.title }}</a>
                         {% if forloop.last != true %}
                         <p>|</p>
                         {% endif %}
                     {% endfor %}
             </div>
-
             <div class="footer-col-right">
                 {% for item in site.data.social_media.socials %}
                     <a href="{{ item.href }}{{ item.username }}" title="{{ item.title }}" class="social-icon" target="_blank">
