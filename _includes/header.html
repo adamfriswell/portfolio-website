@@ -1,9 +1,9 @@
 <header class="site-header">
-    <div class="wrapper">
-        <a class="site-title link" href="/index.html"> {{ site.title }} </a>
-        <nav>
+    <div class="wrapper"> 
+        <ul class="menu">
+            <li class="menu-item menu-item-left" style="float:left"><a class="link" href="/index.html"> {{ site.title }} </a></li>
             {% for item in site.data.site_list.pages reversed%}
-            <a class="page-link link" href="{{item.url}}"> {{ item.title }} </a>
+            <li class="menu-item menu-item-right"><a class="link page-link" href="{{item.url}}"> {{ item.title }}</a></li>
             {% endfor %}
         </nav>
     </div>

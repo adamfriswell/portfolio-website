@@ -1,25 +1,13 @@
 <footer class="site-footer">
-    <div class="wrapper">
-        <div class="footer-col-wrapper">
-            <div class="footer-col-left">
-                <p>
-                    <strong>Site Map:</strong>
-                    {% for item in site.data.site_list.pages %}
-                        <a class="link" href="{{item.url}}"> {{ item.title }}</a>
-                        {% if forloop.last != true %}
-                        <p>|</p>
-                        {% endif %}
-                    {% endfor %}
-            </div>
-            <div class="footer-col-right">
-                {% for item in site.data.social_media.socials %}
-                    <a href="{{ item.href }}{{ item.username }}" title="{{ item.title }}" class="social-icon" target="_blank">
-                        <i class="fa {{ item.fa-icon }} fa-2x"></i>
-                    </a>
-                {% endfor %}
-            </div>
+    <div class="wrapper"> 
+        <div class="footer-col">
+            {% for item in site.data.social_media.socials %}
+            <a href="{{ item.href }}{{ item.username }}" title="{{ item.title }}" class="social-icon" target="_blank">
+                <i class="fa {{ item.fa-icon }} fa-2x"></i>
+            </a>
+            {% endfor %}
         </div>
-        <div class="footer-col-wrapper">
+        <div class="footer-col">
             <div class="copywrite">
                 <p>Copyright &copy;
                     <script>document.write(new Date().getFullYear());</script>, {{site.name}}</p>

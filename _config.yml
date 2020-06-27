@@ -22,12 +22,11 @@ title: Adam Friswell
 name: Adam Friswell
 email: your-email@example.com
 description: Hi 👋, I'm Adam, a Graduate Software Developer 👨‍💻 at Barnett Waddingham. I graduated 🎓 with a 1st class degree in Mathematics from the University of East Anglia in 2019.
-
 #  >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
