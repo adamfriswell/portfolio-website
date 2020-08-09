@@ -1,10 +1,35 @@
-<header class="site-header">
-    <div class="wrapper"> 
-        <ul class="menu">
-            <li class="menu-item menu-item-left" style="float:left"><a class="link" href="/index.html"> {{ site.title }} </a></li>
+<!-- <header class="site-header">
+    <div class="wrapper">
+        <ul class="menu" id="menu-id">
+            <li class="menu-title"><a class="link" href="/index.html"> {{ site.title }} </a></li>
+
+            <li class="menu-item icon"><a class="link" href="javascript:void(0)" onclick="menuFunction()"><i class="fa fa-bars"></i></a></li>
             {% for item in site.data.site_list.pages reversed%}
-            <li class="menu-item menu-item-right"><a class="link page-link" href="{{item.url}}"> {{ item.title }}</a></li>
+            <li class="menu-item menu-item-right"><a class="link" href="{{item.url}}"> {{ item.title }}</a></li>
             {% endfor %}
-        </nav>
+            </nav>
+    </div>
+</header>
+
+<script>
+    function menuFunction() {
+        var x = document.getElementById("menu-id");
+        if (x.className === "menu") {
+            x.className += "-responsive";
+        } else {
+            x.className = "menu";
+        }
+    }
+</script> -->
+<header class="header">
+    <div class="wrapper">
+        <a class="link logo" href="/index.html"> {{ site.title }} </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            {% for item in site.data.site_list.pages%}
+            <li><a class="link" href="{{item.url}}"> {{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
 </header>
