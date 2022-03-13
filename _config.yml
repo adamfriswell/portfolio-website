@@ -4,3 +4,6 @@ name: Adam Friswell
 # Build settings
 plugins:
   - jekyll-feed
+
+sass:
+  sass_dir: assets/css
