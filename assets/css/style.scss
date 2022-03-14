@@ -13,11 +13,6 @@
     font-family: 'Catamaran', sans-serif;
 }
 
-.site {
-    position: relative;
-    min-height: 100vh;
-}
-
 .site-header {
     background-color: white;
     position: fixed;
@@ -25,17 +20,11 @@
 }
 
 .site-content {
-    padding-bottom: 107px;
     padding-top: 86px;
-    color: white;
     min-height: 100vh;
-    min-width: 100vw;
     background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
 }
 
 .site-footer {
