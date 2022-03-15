@@ -90,7 +90,7 @@
     font-size: 150%;
 }
 
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
     .profile {
         font-size: 100%;
     }
@@ -103,7 +103,7 @@
     padding: 30px;
 }
 
-@media screen and (max-width: 350px) {
+@media all and (max-width: 350px) {
     .profile-img {
         min-width: 50px;
     }
