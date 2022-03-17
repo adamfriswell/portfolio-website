@@ -2,14 +2,13 @@
 ---
 
 :root {
-   
     --margin-side-padding: 15%;
     --header-height: 56px;
-    --footer-height: 87px;
+    --footer-height: 77px;
     --grey: #828282;
     --text-colour: white;
     --margin-background-colour: white;
-    
+    --content-padding-top: 20px;
 }
 
 * {
@@ -22,6 +21,11 @@
 .wrapper {
     margin-right: var(--margin-side-padding);
     margin-left: var(--margin-side-padding);
+
+    &-content {
+        @extend .wrapper;
+        padding-top: var(--content-padding-top);
+      }
 }
 
 .site-header {
@@ -59,7 +63,6 @@
 /* Footer*/
 
 .footer-col {
-    padding: 5px;
     text-align: center;
 }
 
@@ -70,6 +73,7 @@
 }
 
 .social-icon:hover {
+    color: inherit;
     opacity: 0.5;
 }
 
@@ -85,26 +89,30 @@
     max-width: 741px;
 }
 
-.profile {
+.home {
+    height: calc(100vh - #{var(--header-height)} - #{var(--footer-height)} - #{var(--content-padding-top)});
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
     text-align: center;
     font-size: 150%;
 }
 
-@media all and (max-width: 767px) {
-    .profile {
+@media all and (max-width: 767px), all and (max-height: 465px) {
+    .home {
         font-size: 100%;
     }
 }
 
-.profile-img {
+.home-img {
     max-height: 400px;
     min-width: 245px;
     border-radius: 50%;
     padding: 30px;
 }
 
-@media all and (max-width: 350px) {
-    .profile-img {
+@media all and (max-width: 350px), all and (max-height: 465px) {
+    .home-img {
         min-width: 50px;
     }
 }
