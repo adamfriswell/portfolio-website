@@ -1,4 +1,4 @@
-# adamfriswell.com - my personal portolio website
+# adamfriswell.com (My personal portolio website)
 
 ## Info
 - Hosting: GitHub pages
