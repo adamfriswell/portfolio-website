@@ -3,7 +3,7 @@
         <div class="footer-col">
             {% for item in site.data.social_media.socials %}
             <a href="{{ item.href }}{{ item.username }}" title="{{ item.title }}" class="social-icon" target="_blank">
-                <i class="fa {{ item.fa-icon }} fa-2x"></i>
+                <i class="{{ item.fa-icon }} fa-xl"></i>
             </a>
             {% endfor %}
             <div class="copywrite">
