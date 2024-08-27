@@ -3,16 +3,20 @@ socials:
 - title: Github
   username: adamfriswell
   href: https://github.com/
-  fa-icon: fa-github-square
+  fa-icon: fa-brands fa-github
 - title: LinkedIn
   username: adam-friswell
   href: https://www.linkedin.com/in/
-  fa-icon: fa-linkedin-square
+  fa-icon: fa-brands fa-linkedin
 - title: Instagram
   username: adam_friswell
   href: https://www.instagram.com/
-  fa-icon: fa-instagram
+  fa-icon: fa-brands fa-instagram
 - title: Twitter
   username: adamfriswelldev
   href: https://twitter.com/
-  fa-icon: fa-twitter-square
+  fa-icon: fa-brands fa-x-twitter
+- title: Medium
+  username: adamfriswell
+  href: https://medium.com/@
+  fa-icon: fa-brands fa-medium
